@@ -1,7 +1,4 @@
-from src.tools.tools import web_search,scrape_url
+from src.pipelines.pipeline import run_research_pipeline
 
-result = scrape_url.invoke({
-    "url": "https://nodejs.org/docs/latest/api/assert.html"
-})
-print(result)
-
+result = run_research_pipeline("The impact of artificial intelligence on healthcare")
+# print(result["report"])
